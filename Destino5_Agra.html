@@ -6,22 +6,50 @@
     <meta name="description" content="Agencia de viajes Travel Partners- Destinos">
     <title>Agra y Nueva Delhi - India </title>
     <link rel="icon" href="icono2.png"/>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
     <!-- Encabezado-->
-    <header>
+    <header id="header">
         <h1 style="text-align: center;">India </h1>
         <h1 style="text-align: center;">Agra y Nueva Delhi </h1>
         <img src="Imag_India/5_QutubMinar2.jpeg" alt="taJ mahal representando a la India" width="100%" height="400px">
     </header>
     <!-- Barra de navegación-->
-    <nav>
+    <nav id="navbar">
         <ul>
             <li>
-                <a href="index.html">Volver al menú principal</a>
+                <a href="index.html">volver al menú principal</a>
+            </li>
+            <li>
+                <a href="Destino2_Roma.html">Roma- Italia</a>
+            </li>
+            <li>
+                <a href="Destino3_Sidney.html">Sidney- Australia</a>
+            </li>
+            <li>
+                <a href="Destino4_Ginebra.html" >Ginebra- Suiza</a>
+            </li>
+            <li>
+                <a href="Destino1_Medellin.html" >Medellin- Colombia</a>
+            </li>
+            <li>
+                <a href="Destino6_Estocolmo.html">Estocolmo- Suecia</a>
             </li>
         </ul>
     </nav>
+        <!-- Lista de enlaces para explorar más -->
+        <div class="explorar-mas">
+            <h3>Explorar</h3>
+            <ul>
+                <li><a href="#atractivos">Atractivos Turísticos</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#costos">Costos</a></li>
+                <li><a href="#interes">Te puede interesar</a></li>
+            </ul>
+        </div>
     <!-- Sección/contenido -->
     <main>
         <section>
@@ -45,134 +73,170 @@
                 allowfullscreen>
             </iframe>   
         </section>
-        <section>
-            <h2>Atractivos turísticos en Agra</h2>
-            <ol>
-                <li>
-                    <article>
-                        <h3>Taj Mahal</h3>
-                        <img src="Imag_India/1_tajMahal.jpg" alt="Taj Mahal" width="450px" height="auto">
-                        <p>El Taj Mahal, una de las maravillas arquitectónicas del mundo, Este emblemático monumento, reconocido como una 
-                            de las Nuevas Siete Maravillas del Mundo, es un tributo al amor eterno del emperador Shah Jahan por su esposa 
-                            Mumtaz Mahal y es un símbolo perdurable de la grandeza y la magnificencia del arte islámico-mogol en la India.
-                            Sus intrincados detalles y su belleza atemporal lo convierten en un destino imperdible.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>El Fuerte de Agra</h3>
-                        <img src="Imag_India/2_FuerteRojo.jpg" alt="El Fuerte de Agra" width="450px" height="auto">
-                        <p>Es una imponente ciudadela de arenisca roja a orillas del río Yamuna, es un símbolo del poderío mogol. 
-                            Construido por Akbar y ampliado por sus sucesores, alberga palacios como el Khas Mahal, la mezquita Moti 
-                            Masjid y el Diwan-i-Khas, donde se recibía a dignatarios. Sus murallas de 2.5 km encierran jardines, patios 
-                            y una rica historia, siendo un tesoro arquitectónico y cultural de la India.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Wildlife SOS</h3>
-                        <img src="Imag_India/3_Wildlife.jpg" alt="imagen del lugar Wildlife SOS" width="450px" height="auto">
-                        <p>Es una organización sin fines de lucro se dedica al rescate, la rehabilitación y la liberación de animales salvajes 
-                            en peligro de extinción. En su centro de Agra, podrás conocer de cerca el trabajo que realizan y ver a algunos 
-                            de los animales que han sido rescatados, como osos perezosos, leopardos, reptiles y aves. Tu visita a Wildlife SOS 
-                            no solo te brindará una experiencia educativa, sino que también te permitirá contribuir a la protección de la 
-                            fauna india.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Kalakriti Cultural & Convention Center:</h3>
-                        <img src="Imag_India/4_Kalakriti.jpg" alt="Kalakriti Cultural & Convention Center:" width="450px" height="auto">
-                        <p>El centro cultural y de convenciones Kalakriti es tu lugari deal si te apasiona la cultura pues este centro cultural, 
-                            te ofrece una amplia gama de eventos y espectáculos durante todo el año. Disfruta de bailes tradicionales, 
-                            música folclórica, obras de teatro y exposiciones de arte que te acercarán a la rica cultura de la India. 
-                            Kalakriti también cuenta con un centro de convenciones de última generación, donde se celebran eventos de talla 
-                            internacional</p>
-                    </article>
-                </li>
-            </ol>
+        <section id="atractivos-agra">
+            <h2>Atractivos Turísticos de Agra y Nueva Delhi</h2>
+            <h2>Atractivos turísticos en Agra:</h2>
+            <div class="tarjetas">
+                <ol>
+                    <li>
+                        <article>
+                            <h3>Taj Mahal</h3>
+                            <img src="Imag_India/1_tajMahal.jpg" alt="Taj Mahal" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-agra-1" class="toggle-texto">
+                            <label for="toggle-texto-agra-1" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Taj Mahal, una de las maravillas arquitectónicas del mundo, Este emblemático monumento, reconocido como una 
+                                de las Nuevas Siete Maravillas del Mundo, es un tributo al amor eterno del emperador Shah Jahan por su esposa 
+                                Mumtaz Mahal y es un símbolo perdurable de la grandeza y la magnificencia del arte islámico-mogol en la India.
+                                Sus intrincados detalles y su belleza atemporal lo convierten en un destino imperdible.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>El Fuerte de Agra</h3>
+                            <img src="Imag_India/2_FuerteRojo.jpg" alt="El Fuerte de Agra" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-agra-2" class="toggle-texto">
+                            <label for="toggle-texto-agra-2" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">Es una imponente ciudadela de arenisca roja a orillas del río Yamuna, es un símbolo del poderío mogol. 
+                                Construido por Akbar y ampliado por sus sucesores, alberga palacios como el Khas Mahal, la mezquita Moti 
+                                Masjid y el Diwan-i-Khas, donde se recibía a dignatarios. Sus murallas de 2.5 km encierran jardines, patios 
+                                y una rica historia, siendo un tesoro arquitectónico y cultural de la India.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Wildlife SOS</h3>
+                            <img src="Imag_India/3_Wildlife.jpg" alt="imagen del lugar Wildlife SOS" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-agra-3" class="toggle-texto">
+                            <label for="toggle-texto-agra-3" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">Es una organización sin fines de lucro se dedica al rescate, la rehabilitación y la liberación de animales salvajes 
+                                en peligro de extinción. En su centro de Agra, podrás conocer de cerca el trabajo que realizan y ver a algunos 
+                                de los animales que han sido rescatados, como osos perezosos, leopardos, reptiles y aves. Tu visita a Wildlife SOS 
+                                no solo te brindará una experiencia educativa, sino que también te permitirá contribuir a la protección de la 
+                                fauna india.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Kalakriti Cultural & Convention Center:</h3>
+                            <img src="Imag_India/4_Kalakriti.jpg" alt="Kalakriti Cultural & Convention Center:" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-agra-4" class="toggle-texto">
+                            <label for="toggle-texto-agra-4" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">El centro cultural y de convenciones Kalakriti es tu lugari deal si te apasiona la cultura pues este centro cultural, 
+                                te ofrece una amplia gama de eventos y espectáculos durante todo el año. Disfruta de bailes tradicionales, 
+                                música folclórica, obras de teatro y exposiciones de arte que te acercarán a la rica cultura de la India. 
+                                Kalakriti también cuenta con un centro de convenciones de última generación, donde se celebran eventos de talla 
+                                internacional</p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
         </section>
-        <section>
-            <h2>Atractivos turísticos en Nueva Delhi</h2>
-            <ol>
-                <li>
-                    <article>
-                        <h3>Qutub Minar</h3>
-                        <img src="Imag_India/5_QutubMinar1.png" alt="Qutub Minar" width="400px" height="440px">
-                        <p>El Qutub Minar, un impresionante minarete de ladrillos rojos y arenisca, es un símbolo emblemático de 
-                            Nueva Delhi. Construido en el siglo XII, es el minarete de ladrillos más alto del mundo y es reconocido 
-                            como Patrimonio de la Humanidad por la UNESCO.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>La Puerta de la India</h3>
-                        <img src="Imag_India/6_LaPuertaIndia.jpg" alt="La Puerta de la India" width="450px" height="auto">
-                        <p>La Puerta de la India es un monumento conmemorativo construido en honor a los soldados indios que 
-                            murieron en la Primera Guerra Mundial y la Tercera Guerra Afgana. Es un símbolo de la independencia 
-                            de la India y un lugar importante para los eventos ceremoniales y conmemorativos.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>El fuerte rojo</h3>
-                        <img src="Imag_India/7_FuerteRojo.jpg" alt="El fuerte rojo de nueva Delhi" width="450px" height="auto">
-                        <p>El Fuerte Rojo de Delhi, construido en el siglo XVII por el emperador mogol Shah Jahan, es una imponente fortaleza 
-                            de arenisca roja que se erige en el corazón de Nueva Delhi, India. Este complejo fortificado alberga una 
-                            impresionante variedad de palacios, mezquitas y salones de audiencia exquisitamente ornamentados. Esta magnífica 
-                            estructura, fusionando elementos islámicos, persas, turcos e indios, es un testimonio del esplendor y la grandeza 
-                            del imperio mogol, y atrae a visitantes de todo el mundo que desean sumergirse en la rica historia y la espléndida 
-                            arquitectura de la India.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Tumba de Humayun</h3>
-                        <img src="Imag_India/8_TumbaHumayun.png" alt="Tumba de Humayun" width="450px" height="auto">
-                        <p>Considerada una de las obras maestras de la arquitectura mogola, la Tumba de Humayun te cautivará con su elegante 
-                            diseño y su perfecta simetría. Construida por Haji Begum en el siglo XVI, esta tumba de mármol blanco alberga 
-                            los restos del emperador Humayun y es un precursor del Taj Mahal. Admira sus intrincados grabados, sus arcos y 
-                            cúpulas, y déjate llevar por la serenidad que se respira en este complejo funerario. 
-                            La Tumba de Humayun es un ejemplo excepcional de la arquitectura indoislámica y un lugar de gran belleza</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Templo del Loto</h3>
-                        <img src="Imag_India/9_TemplodelLoto.jpg" alt="Templo del Loto" width="450px" height="auto">
-                        <p>Elevándose como una flor de loto sobre un estanque de agua, el Templo del Loto es un ícono de la arquitectura 
-                            moderna en Delhi que tiene un diseño único y un simbolismo espiritual. La estructura de mármol blanco, con sus 
-                            nueve pétalos curvos, representa la pureza, la unidad y la armonía. El Templo del Loto está abierto a personas 
-                            de todas las religiones y es un espacio de paz y meditación para aquellos que buscan un refugio del bullicio 
-                            de la ciudad.</p>
-                    </article>
-                </li>
-            </ol>
-        </section>
-        <section>
-            <h2>Itinerario</h2>
-            <p>Itinerario de 5 días y 4 noches en Agra y Nueva Delhi:</p>
-            <ul>
-                <li>Día 1: Llegada a Nueva Delhi, exploración de La Puerta de la India y Qutub Minar</li>
-                <li>Día 2: Viaje a Agra, visita al Taj Mahal y al Fuerte de Agra</li>
-                <li>Día 3: Exploración en Wildlife SOS y espectáculo en el centro cultural Kalakriti.</li>
-                <li>Día 4: regreso a Nueva Delhi, visita al Fuerte Rojo y la Tumba de Humayun</li>
-                <li>Día 5: Recorrido por el templo del loto y Tiempo libre para compras y despedida</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Costos</h2>
-            <ul> 
-                <li>Alojamiento: $600</li>
-                <li>Alimentación: $400</li>
-                <li>Transporte: $150</li>
-                <li>Actividades y otros (compras, propinas, etc): $250</li>
-                <li>Total: $1400</li>
-            </ul>
-        </section>
+        
+        <section id="atractivos-delhi">
+            <h2>Atractivos turísticos en Nueva Delhi:</h2>
+            <div class="tarjetas">
+                <ol>
+                    <li>
+                        <article>
+                            <h3>Qutub Minar</h3>
+                            <img src="Imag_India/5_QutubMinar1.png" alt="Qutub Minar" width="400px" height="440px">
+                            <input type="checkbox" id="toggle-texto-delhi-1" class="toggle-texto">
+                            <label for="toggle-texto-delhi-1" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Qutub Minar, un impresionante minarete de ladrillos rojos y arenisca, es un símbolo emblemático de 
+                                Nueva Delhi. Construido en el siglo XII, es el minarete de ladrillos más alto del mundo y es reconocido 
+                                como Patrimonio de la Humanidad por la UNESCO.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>La Puerta de la India</h3>
+                            <img src="Imag_India/6_LaPuertaIndia.jpg" alt="La Puerta de la India" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-delhi-2" class="toggle-texto">
+                            <label for="toggle-texto-delhi-2" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">La Puerta de la India es un monumento conmemorativo construido en honor a los soldados indios que 
+                                murieron en la Primera Guerra Mundial y la Tercera Guerra Afgana. Es un símbolo de la independencia 
+                                de la India y un lugar importante para los eventos ceremoniales y conmemorativos.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>El fuerte rojo</h3>
+                            <img src="Imag_India/7_FuerteRojo.jpg" alt="El fuerte rojo de nueva Delhi" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-delhi-3" class="toggle-texto">
+                            <label for="toggle-texto-delhi-3" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Fuerte Rojo de Delhi, construido en el siglo XVII por el emperador mogol Shah Jahan, es una imponente fortaleza 
+                                de arenisca roja que se erige en el corazón de Nueva Delhi, India. Este complejo fortificado alberga una 
+                                impresionante variedad de palacios, mezquitas y salones de audiencia exquisitamente ornamentados. Esta magnífica 
+                                estructura, fusionando elementos islámicos, persas, turcos e indios, es un testimonio del esplendor y la grandeza 
+                                del imperio mogol, y atrae a visitantes de todo el mundo que desean sumergirse en la rica historia y la espléndida 
+                                arquitectura de la India.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Tumba de Humayun</h3>
+                            <img src="Imag_India/8_TumbaHumayun.png" alt="Tumba de Humayun" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-delhi-4" class="toggle-texto">
+                            <label for="toggle-texto-delhi-4" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">Considerada una de las obras maestras de la arquitectura mogola, la Tumba de Humayun te cautivará con su elegante 
+                                diseño y su perfecta simetría. Construida por Haji Begum en el siglo XVI, esta tumba de mármol blanco alberga 
+                                los restos del emperador Humayun y es un precursor del Taj Mahal. Admira sus intrincados grabados, sus arcos y 
+                                cúpulas, y déjate llevar por la serenidad que se respira en este complejo funerario. 
+                                La Tumba de Humayun es un ejemplo excepcional de la arquitectura indoislámica y un lugar de gran belleza</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Templo del Loto</h3>
+                            <img src="Imag_India/9_TemplodelLoto.jpg" alt="Templo del Loto" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-delhi-5" class="toggle-texto">
+                            <label for="toggle-texto-delhi-5" class="toggleButton">Leer más</label>
+                            <p class="texto-corto">Elevándose como una flor de loto sobre un estanque de agua, el Templo del Loto es un ícono de la arquitectura 
+                                moderna en Delhi que tiene un diseño único y un simbolismo espiritual. La estructura de mármol blanco, con sus 
+                                nueve pétalos curvos, representa la pureza, la unidad y la armonía. El Templo del Loto está abierto a personas 
+                                de todas las religiones y es un espacio de paz y meditación para aquellos que buscan un refugio del bullicio 
+                                de la ciudad.</p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>        
+        <div class="grid-container">
+            <section id="itinerario">
+                <h2>Itinerario</h2>
+                <p><strong>Itinerario de 5 días y 4 noches en Agra y Nueva Delhi:</strong></p>
+                <ul>
+                    <li class="dia" data-dia="Día 1"><strong>Día 1:</strong> Llegada a Nueva Delhi, exploración de La Puerta de la India y Qutub Minar
+                        <p class="detalle">Después de tu llegada a Nueva Delhi, te sugerimos explorar dos de los monumentos más emblemáticos de la ciudad: La Puerta de la India y el Qutub Minar. La Puerta de la India es un monumento conmemorativo construido en honor a los soldados indios y es un importante símbolo de la independencia de la India. El Qutub Minar, por otro lado, es un impresionante minarete de ladrillos reconocido como Patrimonio de la Humanidad por la UNESCO.</p>
+                    </li>
+                    <li class="dia" data-dia="Día 2"><strong>Día 2:</strong> Viaje a Agra, visita al Taj Mahal y al Fuerte de Agra
+                        <p class="detalle">Hoy te espera una emocionante excursión a Agra, donde tendrás la oportunidad de visitar dos de los monumentos más famosos de la India: el Taj Mahal y el Fuerte de Agra. El Taj Mahal, una de las Siete Maravillas del Mundo, es un impresionante mausoleo de mármol blanco construido por el emperador Shah Jahan en memoria de su esposa Mumtaz Mahal. El Fuerte de Agra es una imponente fortaleza de arenisca roja que alberga palacios y salones de audiencia ornamentados.</p>
+                    </li>
+                    <li class="dia" data-dia="Día 3"><strong>Día 3:</strong> Exploración en Wildlife SOS y espectáculo en el centro cultural Kalakriti.
+                        <p class="detalle">Hoy puedes disfrutar de una experiencia única en Wildlife SOS, un santuario de vida silvestre dedicado al rescate y rehabilitación de animales en peligro. Por la tarde, asiste a un emocionante espectáculo en el centro cultural Kalakriti, donde podrás disfrutar de danzas y música tradicionales de la India.</p>
+                    </li>
+                    <li class="dia" data-dia="Día 4"><strong>Día 4:</strong> Regreso a Nueva Delhi, visita al Fuerte Rojo y la Tumba de Humayun
+                        <p class="detalle">Después de regresar a Nueva Delhi, te recomendamos visitar dos importantes sitios históricos: el Fuerte Rojo y la Tumba de Humayun. El Fuerte Rojo es una imponente fortaleza de arenisca roja que alberga una impresionante variedad de palacios y salones de audiencia. La Tumba de Humayun es una obra maestra de la arquitectura mogol y alberga los restos del emperador Humayun.</p>
+                    </li>
+                    <li class="dia" data-dia="Día 5"><strong>Día 5:</strong> Recorrido por el templo del loto y Tiempo libre para compras y despedida
+                        <p class="detalle">En tu último día, te recomendamos visitar el Templo del Loto, una impresionante estructura moderna conocida por su diseño único en forma de flor de loto. Después, disfruta de tiempo libre para compras y explorar los encantos de Nueva Delhi antes de despedirte de esta fascinante ciudad.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="costos">
+                <h2>Costos</h2>
+                <ul> 
+                    <li>Alojamiento: $600</li>
+                    <li>Alimentación: $400</li>
+                    <li>Transporte: $150</li>
+                    <li>Actividades y otros (compras, propinas, etc): $250</li>
+                    <li>Total: $1400</li>
+                </ul>
+            </section>
+        </div>              
     </main>
     <!-- info adicional -->
-    <aside>
+    <aside id="interes">
         <h3> Te puede interesar:</h3>
         <ul>
             <li>

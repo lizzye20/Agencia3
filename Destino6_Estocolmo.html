@@ -6,21 +6,49 @@
     <meta name="description" content="Agencia de viajes Travel Partners- Destinos">
     <title> Estocolmo - Suecia</title>
     <link rel="icon" href="icono2.png"/>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
     <!-- Encabezado-->
-    <header>
+    <header id="header">
         <h1 style="text-align: center;">Estocolmo - Suecia</h1>
         <img src="Imag_Principal/Imagen6_Estocolmo.png" alt="Estocolmo - Suecia" width="100%" height="400px">
     </header>
     <!-- Barra de navegación-->
-    <nav>
+    <nav id="navbar">
         <ul>
             <li>
-                <a href="index.html">Volver al menú principal</a>
+                <a href="index.html">volver al menú principal</a>
+            </li>
+            <li>
+                <a href="Destino2_Roma.html">Roma- Italia</a>
+            </li>
+            <li>
+                <a href="Destino3_Sidney.html">Sidney- Australia</a>
+            </li>
+            <li>
+                <a href="Destino4_Ginebra.html" >Ginebra- Suiza</a>
+            </li>
+            <li>
+                <a href="Destino5_Agra.html">Agra - India</a>
+            </li>
+            <li>
+                <a href="Destino1_Medellin.html" >Medellin- Colombia</a>
             </li>
         </ul>
     </nav>
+        <!-- Lista de enlaces para explorar más -->
+        <div class="explorar-mas">
+            <h3>Explorar</h3>
+            <ul>
+                <li><a href="#atractivos">Atractivos Turísticos</a></li>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#costos">Costos</a></li>
+                <li><a href="#interes">Te puede interesar</a></li>
+            </ul>
+        </div>
     <!-- Sección/contenido -->
     <main>
         <section>
@@ -39,116 +67,148 @@
                 allowfullscreen>
             </iframe>    
         </section>
-        <section>
+        <section id="atractivos">
             <h2>Atractivos turísticos</h2>
-            <ol>
-                <li>
-                    <article>
-                        <h3>Barrio de Gamla Stan</h3>
-                        <img src="Imag_Estocolmo/1_GamlaStan.jpg" alt="Barrio de Gamla Stan" width="450px" height="auto">
-                        <p>El Barrio de Gamla Stan, con sus estrechas calles empedradas y coloridos edificios, es el corazón histórico 
-                            de Estocolmo. Este encantador barrio medieval alberga numerosas tiendas, restaurantes y cafés, haciéndolo el lugar 
-                            perfecto para perderse y sumergirse en la atmósfera única de la ciudad.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Metro de Estocolmo</h3>
-                        <img src="Imag_Estocolmo/2_Metro.jpg" alt="Metro de Estocolmo" width="450px" height="auto">
-                        <p>El Metro de Estocolmo, conocido como "la galería de arte más larga del mundo", es mucho más que un sistema de transporte. 
-                            Sus estaciones están decoradas con impresionantes obras de arte, esculturas y murales, convirtiendo cada viaje en 
-                            una experiencia cultural única y fascinante.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Museo de Fotografiska</h3>
-                        <img src="Imag_Estocolmo/3_MuseoFotografiska.jpg" alt="Museo de Fotografiska" width="450px" height="auto">
-                        <p>El Museo de Fotografiska es un destino imprescindible para los amantes de la fotografía y las artes visuales. 
-                            Este museo contemporáneo exhibe exposiciones fotográficas de renombre internacional y ofrece talleres, conferencias 
-                            y eventos que celebran el arte de la imagen en todas sus formas.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                    <h3>Mirador del Monteliusvagen</h3>
-                    <img src="Imag_Estocolmo/4_MiradorMontelusvagen.jpg" alt="Mirador del Monteliusvagen" width="450px" height="200px">
-                    <p>El Mirador del Monteliusvagen ofrece una vista panorámica espectacular del casco antiguo de Estocolmo, 
-                        el lago Mälaren y la isla de Riddarholmen. Es el lugar perfecto para disfrutar de vistas impresionantes y 
-                        capturar fotos memorables de la ciudad.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                    <h3>Iglesia Riddarholmen</h3>
-                    <img src="Imag_Estocolmo/5_IglesiaRiddarholmen.jpg" alt="Iglesia Riddarholmen" width="400px" height="450px">
-                    <p>La Iglesia Riddarholmen, construida en el siglo XIII, es una joya arquitectónica ubicada en la isla de Riddarholmen. 
-                        Este lugar sagrado alberga las tumbas de numerosos monarcas suecos y es un importante sitio histórico y cultural de 
-                        Estocolmo.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                    <h3>Museo Vasa</h3>
-                    <img src="Imag_Estocolmo/6_MuseoVasa.jpeg" alt="Museo Vasa" width="450px" height="auto">
-                    <p>El Museo Vasa alberga el único barco del siglo XVII del mundo que se ha conservado en su totalidad: el Vasa. 
-                        Este impresionante buque de guerra se hundió en su viaje inaugural en 1628 y fue rescatado en 1961. 
-                        El museo ofrece una fascinante mirada a la historia marítima de Suecia y al proceso de preservación del Vasa.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                    <h3>Djurgarden</h3>
-                    <img src="Imag_Estocolmo/7_Djurgarden.jpg" alt="Djurgarden" width="450px" height="auto">
-                    <p>Djurgarden es una isla situada en el centro de Estocolmo que ofrece un oasis de tranquilidad y naturaleza en la 
-                        bulliciosa ciudad. Con hermosos parques, jardines y museos, Djurgarden es el lugar perfecto para relajarse, 
-                        disfrutar de un picnic al aire libre y explorar la belleza natural de Estocolmo.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                    <h3>Ayuntamiento de Estocolmo</h3>
-                    <img src="Imag_Estocolmo/8_Ayuntamiento.jpg" alt="Ayuntamiento de Estocolmo" width="450px" height="auto">
-                    <p>El Ayuntamiento de Estocolmo es un impresionante edificio de estilo neorrenacentista situado en la isla de 
-                        Kungsholmen. Es famoso por su elegante arquitectura, sus salones decorados y sus impresionantes vistas del 
-                        lago Mälaren. El Ayuntamiento alberga la Sala Dorada, donde se celebra el banquete de los Premios Nobel cada año.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                    <h3>Palacio de Drottningholm</h3>
-                    <img src="Imag_Estocolmo/9_PalacioDrottning.webp" alt="Palacio de Drottningholm" width="450px" height="auto">
-                    <p>El Palacio de Drottningholm, ubicado en la isla de Lovön, es un magnífico palacio real que data del siglo XVII. 
-                        Es un Patrimonio de la Humanidad de la UNESCO y es conocido por su impresionante arquitectura, sus exquisitos jardines 
-                        y su hermosa ubicación junto al lago Mälaren. El palacio es la residencia oficial de la familia real sueca.</p>
-                    </article>
-                </li>
-            </ol>
-        </section>
-        <section>
-            <h2>Itinerario</h2>
-            <p>Itinerario de 5 días y 4 noches en Estocolmo:</p>
-            <ul>
-                <li>Día 1: Llegada a Estocolmo, exploración del Barrio de Gamla Stan y visita al Mirador del Monteliusvagen</li>
-                <li>Día 2: Visita al Museo de Fotografiska y paseo por el Metro de Estocolmo</li>
-                <li>Día 3: Excursión a Djurgarden y visita al Museo Vasa</li>
-                <li>Día 4: Exploración del Palacio de Drottningholm y visita a la Iglesia Riddarholmen</li>
-                <li>Día 5: Visita al Ayuntamiento de Estocolmo y tiempo libre para compras y despedida</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Costos</h2>
-            <ul> 
-                <li>Alojamiento: $700</li>
-                <li>Alimentación: $500</li>
-                <li>Transporte: $150</li>
-                <li>Actividades y otros (compras, propinas, etc): $300 </li>
-                <li>Total: $1650</li>
-            </ul>
-        </section>
+            <div class="tarjetas">
+                <ol>
+                    <li>
+                        <article>
+                            <h3>Barrio de Gamla Stan</h3>
+                            <img src="Imag_Estocolmo/1_GamlaStan.jpg" alt="Barrio de Gamla Stan" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-1" class="toggle-texto">
+                            <label for="toggle-texto-1" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Barrio de Gamla Stan, con sus estrechas calles empedradas y coloridos edificios, es el corazón histórico 
+                                de Estocolmo. Este encantador barrio medieval alberga numerosas tiendas, restaurantes y cafés, haciéndolo el lugar 
+                                perfecto para perderse y sumergirse en la atmósfera única de la ciudad.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Metro de Estocolmo</h3>
+                            <img src="Imag_Estocolmo/2_Metro.jpg" alt="Metro de Estocolmo" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-2" class="toggle-texto">
+                            <label for="toggle-texto-2" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Metro de Estocolmo, conocido como "la galería de arte más larga del mundo", es mucho más que un sistema de transporte. 
+                                Sus estaciones están decoradas con impresionantes obras de arte, esculturas y murales, convirtiendo cada viaje en 
+                                una experiencia cultural única y fascinante.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Museo de Fotografiska</h3>
+                            <img src="Imag_Estocolmo/3_MuseoFotografiska.jpg" alt="Museo de Fotografiska" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-3" class="toggle-texto">
+                            <label for="toggle-texto-3" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Museo de Fotografiska es un destino imprescindible para los amantes de la fotografía y las artes visuales. 
+                                Este museo contemporáneo exhibe exposiciones fotográficas de renombre internacional y ofrece talleres, conferencias 
+                                y eventos que celebran el arte de la imagen en todas sus formas.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Mirador del Monteliusvagen</h3>
+                            <img src="Imag_Estocolmo/4_MiradorMontelusvagen.jpg" alt="Mirador del Monteliusvagen" width="450px" height="200px">
+                            <input type="checkbox" id="toggle-texto-4" class="toggle-texto">
+                            <label for="toggle-texto-4" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Mirador del Monteliusvagen ofrece una vista panorámica espectacular del casco antiguo de Estocolmo, 
+                                el lago Mälaren y la isla de Riddarholmen. Es el lugar perfecto para disfrutar de vistas impresionantes y 
+                                capturar fotos memorables de la ciudad.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Iglesia Riddarholmen</h3>
+                            <img src="Imag_Estocolmo/5_IglesiaRiddarholmen.jpg" alt="Iglesia Riddarholmen" width="400px" height="450px">
+                            <input type="checkbox" id="toggle-texto-5" class="toggle-texto">
+                            <label for="toggle-texto-5" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">La Iglesia Riddarholmen, construida en el siglo XIII, es una joya arquitectónica ubicada en la isla de Riddarholmen. 
+                                Este lugar sagrado alberga las tumbas de numerosos monarcas suecos y es un importante sitio histórico y cultural de 
+                                Estocolmo.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Museo Vasa</h3>
+                            <img src="Imag_Estocolmo/6_MuseoVasa.jpeg" alt="Museo Vasa" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-6" class="toggle-texto">
+                            <label for="toggle-texto-6" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Museo Vasa alberga el único barco del siglo XVII del mundo que se ha conservado en su totalidad: el Vasa. 
+                                Este impresionante buque de guerra se hundió en su viaje inaugural en 1628 y fue rescatado en 1961. 
+                                El museo ofrece una fascinante mirada a la historia marítima de Suecia y al proceso de preservación del Vasa.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Djurgarden</h3>
+                            <img src="Imag_Estocolmo/7_Djurgarden.jpg" alt="Djurgarden" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-7" class="toggle-texto">
+                            <label for="toggle-texto-7" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">Djurgarden es una isla situada en el centro de Estocolmo que ofrece un oasis de tranquilidad y naturaleza en la 
+                                bulliciosa ciudad. Con hermosos parques, jardines y museos, Djurgarden es el lugar perfecto para relajarse, 
+                                disfrutar de un picnic al aire libre y explorar la belleza natural de Estocolmo.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Ayuntamiento de Estocolmo</h3>
+                            <img src="Imag_Estocolmo/8_Ayuntamiento.jpg" alt="Ayuntamiento de Estocolmo" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-8" class="toggle-texto">
+                            <label for="toggle-texto-8" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Ayuntamiento de Estocolmo es un impresionante edificio de estilo neorrenacentista situado en la isla de 
+                                Kungsholmen. Es famoso por su elegante arquitectura, sus salones decorados y sus impresionantes vistas del 
+                                lago Mälaren. El Ayuntamiento alberga la Sala Dorada, donde se celebra el banquete de los Premios Nobel cada año.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Palacio de Drottningholm</h3>
+                            <img src="Imag_Estocolmo/9_PalacioDrottning.webp" alt="Palacio de Drottningholm" width="450px" height="auto">
+                            <input type="checkbox" id="toggle-texto-9" class="toggle-texto">
+                            <label for="toggle-texto-9" id="toggleButton">Leer más</label>
+                            <p class="texto-corto">El Palacio de Drottningholm, ubicado en la isla de Lovön, es un magnífico palacio real que data del siglo XVII. 
+                                Es un Patrimonio de la Humanidad de la UNESCO y es conocido por su impresionante arquitectura, sus exquisitos jardines 
+                                y su hermosa ubicación junto al lago Mälaren. El palacio es la residencia oficial de la familia real sueca.</p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>        
+        <div class="grid-container">
+            <section id="itinerario">
+                <h2>Itinerario</h2>
+                <p><strong>Itinerario de 5 días y 4 noches en Estocolmo:</strong></p>
+                <ul>
+                    <li class="dia" data-dia="Día 1"><strong>Día 1:</strong> Llegada a Estocolmo, exploración del Barrio de Gamla Stan y visita al Mirador del Monteliusvagen
+                        <p class="detalle">Después de tu llegada a Estocolmo, te sugerimos explorar el encantador Barrio de Gamla Stan, con sus estrechas calles empedradas y coloridos edificios. No te pierdas la oportunidad de disfrutar de las vistas panorámicas desde el Mirador del Monteliusvagen, que ofrece una vista espectacular del casco antiguo de la ciudad.</p>
+                    </li>
+                    <li class="dia" data-dia="Día 2"><strong>Día 2:</strong> Visita al Museo de Fotografiska y paseo por el Metro de Estocolmo
+                        <p class="detalle">Hoy puedes visitar el Museo de Fotografiska, un destino imprescindible para los amantes de la fotografía y las artes visuales. Después, disfruta de un paseo por el Metro de Estocolmo, conocido como "la galería de arte más larga del mundo", donde podrás admirar impresionantes obras de arte en sus estaciones.</p>
+                    </li>
+                    <li class="dia" data-dia="Día 3"><strong>Día 3:</strong> Excursión a Djurgarden y visita al Museo Vasa
+                        <p class="detalle">Hoy te recomendamos hacer una excursión a Djurgarden, una isla situada en el centro de Estocolmo que ofrece un oasis de tranquilidad y naturaleza en la bulliciosa ciudad. No te pierdas la oportunidad de visitar el Museo Vasa, que alberga el único barco del siglo XVII del mundo que se ha conservado en su totalidad: el Vasa.</p>
+                    </li>
+                    <li class="dia" data-dia="Día 4"><strong>Día 4:</strong> Exploración del Palacio de Drottningholm y visita a la Iglesia Riddarholmen
+                        <p class="detalle">Hoy puedes explorar el magnífico Palacio de Drottningholm, ubicado en la isla de Lovön, y admirar su impresionante arquitectura y exquisitos jardines. Después, visita la Iglesia Riddarholmen, una joya arquitectónica ubicada en la isla de Riddarholmen, que alberga las tumbas de numerosos monarcas suecos.</p>
+                    </li>
+                    <li class="dia" data-dia="Día 5"><strong>Día 5:</strong> Visita al Ayuntamiento de Estocolmo y tiempo libre para compras y despedida
+                        <p class="detalle">En tu último día en Estocolmo, te recomendamos visitar el Ayuntamiento de Estocolmo, un impresionante edificio de estilo neorrenacentista famoso por su elegante arquitectura y sus impresionantes vistas del lago Mälaren. Después, disfruta de tiempo libre para compras y despedirte de esta encantadora ciudad antes de partir.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="costos">
+                <h2>Costos</h2>
+                <ul> 
+                    <li>Alojamiento: $700</li>
+                    <li>Alimentación: $500</li>
+                    <li>Transporte: $150</li>
+                    <li>Actividades y otros (compras, propinas, etc): $300</li>
+                    <li>Total: $1650</li>
+                </ul>
+            </section>
+        </div>        
     </main>
     <!-- info adicional -->
-    <aside>
+    <aside id="interes">
         <h3> Te puede interesar:</h3>
         <ul>
             <li>

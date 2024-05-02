@@ -1,0 +1,225 @@
+/* Estilos para el encabezado fijo */
+#header h1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #049dd96b;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    z-index: 1000; 
+    margin-top: 10px;
+    font-family: "Audiowide"; 
+}
+
+#header img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para la barra de navegación fija */
+#navbar {
+    position:fixed;
+    top: 55px; /* Altura del encabezado */
+    width: 100%;
+    background-color: #fdf7c8;
+    padding: 10px 0;
+    z-index: 1000; 
+    border-radius: 20px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    gap: 5px;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #049DD9;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+}
+main{
+    margin-left: 17%;
+    margin-right: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Estilos para la sección Descripción */
+main section:nth-of-type(1) {
+    text-align: center;
+    padding: 20px; 
+}
+/* Estilos para la seccion Explorar */
+.explorar-mas {
+    position: fixed;
+    top: 50%; /* Ajusta la posición debajo de la barra de navegación */
+    width: 15%;
+    background-color: #fdf7c89e;
+    padding: 0 0px;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    border-radius: 20px;
+    overflow-y: auto; /* Agrega scroll vertical si es necesario */
+}
+
+
+.explorar-mas h3{
+    text-align: center;
+}
+
+.explorar-mas ul {
+    list-style-type: none;
+    margin: 6px;
+    padding: 0;
+}
+
+.explorar-mas ul li {
+    display: block; /* Cambiar a bloque para que estén uno debajo del otro */
+    margin-bottom: 0; 
+}
+
+.explorar-mas ul li a {
+    text-decoration: none;
+    color: #049DD9;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px 3px;
+    transition: background-color 0.3s;
+    display: block; 
+}
+
+.explorar-mas ul li a:hover {
+    color: #3E7CB1; /* Cambiar el color del texto al pasar el mouse */
+}
+
+/* Estilos para la seccion de sitios turisticos */
+
+.tarjetas ol {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que los elementos se envuelvan en filas */
+    justify-content: center; 
+}
+
+
+.tarjetas li {
+    flex: 1 1 350px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 400px;
+    list-style-type: none;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px; 
+    border-top: #fc9b1d solid 5px; 
+}
+
+.tarjetas li img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tarjetas li article {
+    padding: 20px;
+}
+
+.tarjetas li h3 {
+    margin-top: 0;
+    font-family: "Lakki Reddy", serif; 
+    font-size: larger;
+}
+
+.tarjetas li p {
+    margin-bottom: 0;
+    
+}
+.texto-corto {
+    max-height: 50px; /* Altura máxima del texto corto */
+    overflow: hidden; /* Oculta el exceso de texto */
+    transition: max-height 0.5s; 
+}
+/* Estilos para el contenido completo cuando el checkbox está marcado */
+.toggle-texto:checked ~ .texto-corto {
+    max-height: none; /* Muestra todo el texto cuando el checkbox está marcado */
+}
+/* Estilos para el botón desplegable */
+#toggleButton {
+    padding: 3px;
+    background-color: #049DD9;
+    color: white;
+    border:#049DD9 ;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#toggleButton:hover {
+    background-color: #04689B;
+}
+/* Estilos para seccion de itinerario y costos */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    
+}
+
+.dia {
+    cursor: pointer;
+}
+
+.detalle {
+    display: none;
+}
+
+.dia:hover .detalle {
+    display: block;
+    color: rgb(0, 0, 214)
+}
+#itinerario ul li:hover {
+    color: rgb(0, 0, 214); /*  */
+}
+
+#itinerario ul, #costos ul {
+    list-style-type: none; /* Elimina los estilos de lista */
+    padding: 0; 
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+#costos h2, #costos li{
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* Estilos para el Aside */
+aside{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+}
+#interes a {
+    margin-top: 5px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: bisque;
+    border: 2px solid rgb(240, 215, 176);
+}

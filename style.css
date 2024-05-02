@@ -1,0 +1,128 @@
+header {
+    width: 100%; 
+    background: lightcyan; 
+}
+/* Estilos para el encabezado */
+header h1 {
+    text-align: center;
+    font-family: "Audiowide"; 
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 4px; /* Ancho del borde */
+    -webkit-text-stroke-color: rgb(237, 240, 239); /* Color del borde */
+    color: white;
+     /* z-index: 2; Asegura que el h1 esté sobre la imagen */
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    font-size: 40px;
+    text-shadow: 4px 4px 6px #2d0202; /* Efecto de sombra */
+}
+
+header img {
+    width: 100%;  
+    height: 500pv; 
+    padding-bottom: 20px; 
+    padding-top: 20px; 
+}
+/* Estilos para la barra de navegación */
+/* Descendientes */
+nav {
+    background: #fdf7c8;
+    border-radius: 8px;
+    padding: 1em;
+    font-family: sans-serif;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px;
+    padding: 2px;
+
+}
+/* li no tiene padding, por lo cuál "a" es quien me está determiando el tamaño de "li" y que funcione "hover" */
+nav ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+a:hover{
+    color: #D34342;
+    background-color: white;
+    box-shadow: 6px 3px #a5b2c1;
+}
+/* Estilos para los enlaces de la barra de navegación */
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size:large;
+    font-weight: bold;
+    display:inline-block;  
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #049DD9;
+    transition-delay: 0.35s;
+    
+}
+/* Estilos para la sección Acerca de nosotros */
+main section:nth-of-type(1) {
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+/* Estilos para la sección de destinos */
+main section:nth-of-type(2) {
+    width: 100%;
+    height: 1300px; 
+    background: lightcyan; 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+/* Estilos para los contenedores de cada destino */
+/* pseudoclases y descendientes directos (hijos) */
+main section:nth-of-type(2) > div {
+    padding: 10px;
+    display: flex;  
+    height:400px; 
+    margin-bottom: 2px;
+}
+
+.destino {
+    background: white; 
+    margin-left: 2%; 
+    margin-right: 2%;
+    width: 47%; 
+    height: 95%;
+    border-radius: 20px;
+}
+
+.destino.violeta {
+    background:#fdf7c8;
+}
+  
+/* Estilos para el texto dentro de los contenedores de destino */
+main section:nth-of-type(2) > div h3 {
+    color: navy;
+    font-family: "Lakki Reddy", serif;
+    font-size: 30px;
+    font-style: normal;
+    margin: 0%;
+    padding: 0%;
+    border-top: 5%;
+
+}
+
+/* Estilos para las imágenes dentro de los contenedores de destino */
+main section:nth-of-type(2) > div img {
+    width: 90%;
+    height: 310px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: bisque;
+    border: 2px solid rgb(240, 215, 176);
+}
